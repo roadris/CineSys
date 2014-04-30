@@ -1,3 +1,7 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
 body#index{
 	overflow-x: hidden;
 	overflow-y: hidden; 
@@ -13,8 +17,8 @@ figure.banner{
 }
 
 figure.banner img#foto{
-	width: 1368px;
-	height: 640px;
+	width: 1442px;
+	height: 800px;
 	
 }
 
@@ -49,7 +53,7 @@ figure.banner figcaption button{
     text-align: center;
     position: absolute;
     bottom: 0px;
-    width: 1368px;
+    width: 1375px;
 }
 
 #menu ul li { 

@@ -5,28 +5,45 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" title="Man" href="css/style.css">
-	
-
-    <script>
-    function mudar(link) {
-    document.getElementById('foto').src = link;
-    }
-    </script>
-
 </head>
-<body id="index">
+<body style="overflow: hidden">
 	
-	<figure class="banner">
-	<img  id="foto" src="imagens/bannerxmen.jpg"/>
-		<figcaption>	
-			<button onclick="mudar('imagens/banner300.jpg');"><img src="imagens/indice300.jpg"></button>
-		    <button onclick="mudar('imagens/banneraranha.jpg');"><img src="imagens/indicearanha.jpg"></button>
-		    <button onclick="mudar('imagens/bannerxmen.jpg');"><img src="imagens/indicexmen.jpg"></button>
-		    <button onclick="mudar('imagens/bannermuppets.jpg');"><img src="imagens/indicemuppets.jpg"></button>
-		    <button onclick="mudar('imagens/bannergodzilla.jpg');"><img src="imagens/indicegodzilla.jpg"></button>
-		   
-		</figcaption>
-	</figure>
+	
+	<img  id="foto" src="imagens/bannerxmen.jpg" height="" />
+
+	<script type="text/javascript">
+
+		var img = document.getElementById('foto');
+
+		img.height = screen.height-130;
+		img.width = screen.width;
+
+		document.write(screen.height+'x'+screen.width);
+
+		function changeImage()
+		{
+		    var img = document.getElementById('foto');
+		    img.src = images[x];
+		    x++;
+
+		    if(x >= images.length){
+		        x = 0;
+		    } 
+
+		    setTimeout("changeImage()", 5000);
+		}
+
+		var images = [],
+		x = 1;
+
+		images[0] = "imagens/banner300.jpg";
+		images[1] = "imagens/banneraranha.jpg";
+		images[2] = "imagens/bannerxmen.jpg";
+		images[3] = "imagens/bannermuppets.jpg";
+		images[4] = "imagens/bannergodzilla.jpg";
+		setTimeout("changeImage()", 5000);
+
+	</script>
 
 	<nav id="menu">
 		
