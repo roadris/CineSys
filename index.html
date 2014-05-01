@@ -9,41 +9,7 @@
 <body style="overflow: hidden">
 	
 	
-	<img  id="foto" src="imagens/bannerxmen.jpg" height="" />
-
-	<script type="text/javascript">
-
-		var img = document.getElementById('foto');
-
-		img.height = screen.height-130;
-		img.width = screen.width;
-
-		document.write(screen.height+'x'+screen.width);
-
-		function changeImage()
-		{
-		    var img = document.getElementById('foto');
-		    img.src = images[x];
-		    x++;
-
-		    if(x >= images.length){
-		        x = 0;
-		    } 
-
-		    setTimeout("changeImage()", 5000);
-		}
-
-		var images = [],
-		x = 1;
-
-		images[0] = "imagens/banner300.jpg";
-		images[1] = "imagens/banneraranha.jpg";
-		images[2] = "imagens/bannerxmen.jpg";
-		images[3] = "imagens/bannermuppets.jpg";
-		images[4] = "imagens/bannergodzilla.jpg";
-		setTimeout("changeImage()", 5000);
-
-	</script>
+	<img  id="foto" src="imagens/img0.jpg" height="" />
 
 	<nav id="menu">
 		
@@ -57,5 +23,7 @@
 			</li>
 		</ul>
 	</nav>
+
+	<script type="text/javascript" src="js/client.js"></script>
 </body>
 </html>
