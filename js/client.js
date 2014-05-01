@@ -9,7 +9,7 @@ function changeImage()
     img.src = images+x+'.jpg';
     x++;
 
-    if(x >= images.length){
+    if(x >= 4){
         x = 0;
     } 
 
