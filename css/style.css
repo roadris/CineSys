@@ -3,10 +3,6 @@
 	margin: 0px;
 }
 
-body{
-	background-color: #4f4f4f;
-}
-
 figure.banner{
 	position: absolute;
 	margin-top: -10px;
@@ -80,9 +76,10 @@ figure.banner figcaption button{
 }
 
 section#programacao{
-	background-color: #4f4f4f;
+	background-color: #dddddd;
 	margin: 20px 300px 20px 300px;
-	border-top: 2px solid black;
+	border: 2px solid #cccccc;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
 	width: 700px;
 
 }
