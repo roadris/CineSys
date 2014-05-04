@@ -75,7 +75,7 @@ figure.banner figcaption button{
     transition: 1s;
 }
 
-section#programacao{
+section#filmes{
 	background-color: #dddddd;
 	margin: 20px 300px 20px 300px;
 	border: 2px solid #cccccc;
@@ -84,10 +84,11 @@ section#programacao{
 
 }
 
-p#prog{
-	margin: 100px 300px 20px 300px;
-	font-size: 30px;
+p#pfilmes{
+	margin: 20px 300px 20px 300px;
+	font-size: 76px;
 	color: #01A9DB;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
 }
 
 
