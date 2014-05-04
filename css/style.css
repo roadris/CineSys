@@ -75,6 +75,21 @@ figure.banner figcaption button{
     transition: 1s;
 }
 
+.botaotopo {
+display:scroll;
+position:fixed;
+bottom:2px;
+right:2px;
+
+}
+
+.botaohome {
+display:scroll;
+position:fixed;
+bottom:2px;
+left:2px;
+}
+
 section#filmes{
 	background-color: #dddddd;
 	margin: 20px 300px 20px 300px;
@@ -85,7 +100,13 @@ section#filmes{
 }
 
 p#pfilmes{
-	margin: 20px 300px 20px 300px;
+	margin: 20px 0px 20px 300px;
+	font-size: 76px;
+	color: #01A9DB;
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+p#pbreve{
+	margin: 20px 0px 20px 500px;
 	font-size: 76px;
 	color: #01A9DB;
 	text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
@@ -106,7 +127,6 @@ table#prog{
 }
 
 table#prog td{
-	
 	padding: 5px;
 	text-align: left;
 	vertical-align: middle;
@@ -114,13 +134,5 @@ table#prog td{
 
 table#prog td.ce{
 	color: #ffffff;
-	
-	
 	width: 150px;
-
-}
-
-table#prog td.cd{
-	
-	
 }
