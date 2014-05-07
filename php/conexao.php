@@ -3,7 +3,7 @@
 	$host = "localhost";
 	$user = "postgres";
 	$pswd = "J96914333";
-	$dbname = "TestAjax";
+	$dbname = "CineSys";
 	$con = null;
 
 	function abrirConexao($con, $host, $user, $pswd, $dbname)
