@@ -46,15 +46,27 @@ body{
 	display:scroll;
 	position:fixed;
 	bottom:2px;
-	right:2px;
+	right:20px;
+	text-decoration: none;
+	color: #585858;
+	text-shadow: 5px 5px 10px rgba(255,255,255,1);
+	font-size: 30px;
+	font-weight: bold;
+
 }
 
 .botaohome {
 	display:scroll;
 	position:fixed;
 	bottom:2px;
-	left:2px;
+	left:20px;
+	text-decoration: none;
+	color: #585858;
+	text-shadow: 5px 5px 10px rgba(255,255,255,1);
+	font-size: 30px;
+	font-weight: bold;
 }
+
 
 section#filmes{
 	background-color: #dddddd;
@@ -106,8 +118,8 @@ table#prog td.ce{
 }
 
 table#prog td.cd a img{
-	width: 50px;
-	height: 30px;
+	width: 40px;
+	height: 20px;
 }
 
 
