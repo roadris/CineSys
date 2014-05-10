@@ -48,8 +48,8 @@ body{
 	bottom:2px;
 	right:20px;
 	text-decoration: none;
-	color: #585858;
-	text-shadow: 5px 5px 10px rgba(255,255,255,1);
+	color: #610B0B;
+	text-shadow: 2px 2px 10px rgba(255,255,255,1);
 	font-size: 30px;
 	font-weight: bold;
 
@@ -61,8 +61,8 @@ body{
 	bottom:2px;
 	left:20px;
 	text-decoration: none;
-	color: #585858;
-	text-shadow: 5px 5px 10px rgba(255,255,255,1);
+	color: #610B0B;
+	text-shadow: 2px 2px 10px rgba(255,255,255,1);
 	font-size: 30px;
 	font-weight: bold;
 }
