@@ -7,18 +7,18 @@
 	<link rel="stylesheet" href="css/style.html">
 </head>
 <body>
-	<form name="acesso" method="POST">
+	<img src="../imagens/bg_sistema.jpg" id="bg_acesso">
+	<form id="acesso" name="acesso" method="POST">
 		<label>
-			Usuario: <input type="text" id="usuario" />
-			<span id="sucesso"></span>
+		Usuário: <input type="text" id="usuario" placeholder="Digite o usuário" required="required" autofocus/>
+		<span id="sucesso"></span>
 		</label>
 		<label>
-			Senha: <input type="password" id="senha">
-			<span id="erro"></span>
+		Senha: <input type="password" id="senha" placeholder="Digite a senha" required="required" />
+		<span id="erro"></span>
 		</label>
-		
-		<input type="submit" value="Enviar">
 
+		<input type="submit" value="Enviar">
 	</form>
 </body>
 </html>
