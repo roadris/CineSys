@@ -10,6 +10,10 @@ img#bg_acesso{
 	width: 700px;
 }
 
+body{
+	background-color: #a4a4a4;
+}
+
 form{
 	position: absolute;
 	box-shadow: 2px 2px 5px rgba(0,0,0,1);
@@ -18,6 +22,7 @@ form{
 	left: 40%;
 	width: 300px;
 	text-align: center;
+	background-color: #ffffff;
 }
 
 label{
@@ -50,42 +55,60 @@ header#cabecalho img#bg_sistema{
 }
 
 nav#menu{
-	width: 20%;
+	width: 100%;
 	position: relative;
-	margin: -45px auto 0px auto;
-	text-align: center;
+	margin: -40px auto 0px auto;
 	
 }
 
-nav#menu ul li{
+fieldset{
+	width: 300px;
 	display: inline;
- 	text-decoration: none;
-
-}
-
-nav#menu ul li a{
-	text-decoration: none;
-	font-size: 30px;
-	color: white;
-	margin: 0px 20px 0px 0px;
+	border: 2px solid black;
 	padding: 5px;
 }
 
-nav#menu ul li a:hover{
-	background-color: #0174DF;
-	border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    transition: 1s;
+fieldset#administracao{
+	margin: 0px auto 0px 30%;
+}
 
+fieldset#usuario{
+	margin: 0px auto 0px auto;
+}
+
+fieldset#funcionario{
+	margin: 0px auto 0px 40%;
+}
+
+fieldset#administracao button{
+	padding: 2px;
+	font-size: 15px;
+	margin: 0px 13px;
+}
+
+fieldset#usuario button{
+	padding: 2px;
+	font-size: 15px;
+	margin: 0px 2px;
+}
+
+fieldset#funcionario button{
+	padding: 2px;
+	font-size: 15px;
+	margin: 0px  15px;
+}
+
+legend{
+	font-size: 20px;
 }
 
 footer#rodape{
 	position: absolute;
-	border-top: 1px solid #606060;
+	border-top: 3px solid #606060;
 	bottom: 0px;
 	margin: 0px auto 0px auto;
 	width: 100%;
-	background-color: #0174DF;
+	background-color: #cccccc;
 }
 
 footer#rodape p{
