@@ -92,6 +92,14 @@ p#pbreve{
 	width: 320px;
 }
 
+p#promocao{
+	margin: 20px auto 20px auto;
+	font-size: 76px;
+	color: #585858;
+	text-shadow: 5px 5px 20px rgba(255,255,255,1);
+	width: 600px;
+}
+
 
 section img{
 	display: block;
@@ -121,5 +129,28 @@ table#prog td.cd a img{
 	width: 40px;
 	height: 20px;
 }
+
+section#filmes h1{
+	font-size: 30px;
+	margin-top: 10px;
+	text-align: center;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+}
+
+section#filmes p{
+	text-align: center;
+	font-size: 20px;
+}
+
+section#filmes p#obs{
+	margin-top: 30px;
+}
+
+section#filmes span{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
 
 
