@@ -102,6 +102,9 @@ legend{
 	font-size: 20px;
 }
 
+div#corpo{
+	background-color: #a4a4a4;
+}
 footer#rodape{
 	position: absolute;
 	border-top: 3px solid #606060;
