@@ -30,7 +30,7 @@ label{
 	margin: 10px;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password], input[type=number],input[type=date],select{
 	padding: 5px;
 	font-size: 16px;
 }
@@ -69,15 +69,15 @@ fieldset{
 }
 
 fieldset#administracao{
-	margin: 0px auto 0px 30%;
+	margin: 10px auto 0px 30%;
 }
 
 fieldset#usuario{
-	margin: 0px auto 0px auto;
+	margin: 10px auto 0px auto;
 }
 
 fieldset#funcionario{
-	margin: 0px auto 0px 40%;
+	margin: 10px auto 0px 40%;
 }
 
 fieldset#administracao button{
