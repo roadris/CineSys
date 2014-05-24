@@ -83,7 +83,7 @@ fieldset#funcionario{
 fieldset#administracao button{
 	padding: 2px;
 	font-size: 15px;
-	margin: 0px 13px;
+	margin: 0px 40px;
 }
 
 fieldset#usuario button{
@@ -95,7 +95,7 @@ fieldset#usuario button{
 fieldset#funcionario button{
 	padding: 2px;
 	font-size: 15px;
-	margin: 0px  15px;
+	margin: 0px  40px;
 }
 
 legend{
