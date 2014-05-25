@@ -78,6 +78,7 @@ fieldset#usuario{
 
 fieldset#funcionario{
 	margin: 10px auto 0px 40%;
+	width: 150px;
 }
 
 fieldset#administracao button{
@@ -89,7 +90,7 @@ fieldset#administracao button{
 fieldset#usuario button{
 	padding: 2px;
 	font-size: 15px;
-	margin: 0px 2px;
+	margin: 0px 7px;
 }
 
 fieldset#funcionario button{
