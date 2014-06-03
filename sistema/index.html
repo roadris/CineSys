@@ -10,18 +10,26 @@
 <body>
 	<header id="cabecalho">
 	<img id="bg_sistema" src="imagens/bg_logo.jpg"/>
-	<form id="acesso" name="acesso" method="POST">
-		<label>
-		Usuário: <input type="text" id="usuario" placeholder="Digite o usuário" required="required" autofocus/>
-		<span id="sucesso"></span>
-		</label>
-		<label>
-		Senha: <input type="password" id="senha" placeholder="Digite a senha" required="required" />
-		<span id="erro"></span>
-		</label>
+	<div id="conteudo">
+		<form id="acesso" name="acesso" method="POST" onSubmit="return false;">
+			<label>
+			Usuário: <input type="text" id="usuario" placeholder="Digite o usuário" required="required" autofocus/>
+			<span id="sucesso"></span>
+			</label>
+			<label>
+			Senha: <input type="password" id="senha" placeholder="Digite a senha" required="required" />
+			</label>
 
-		<input type="submit" value="Enviar">
-	</form>
+			<input type="submit" value="Acessar" onclick="acessarSistema(ajaxRequest)"> </br>
+			<div id="resposta"></div>
+		</form>
 	</header>
+	</div>
+
+	<footer id="rodape">
+		<p>CineSys - Desenvolvido por: Jeferson Euclides / Rodrigo Adriano - Disciplina: Laboratório de Programação 5 - Profº Edy Segura</p>
+	</footer>
+
+	<script type="text/javascript" src="js/ajax.js"></script>
 </body>
 </html>

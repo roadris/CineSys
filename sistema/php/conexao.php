@@ -2,7 +2,7 @@
 
 	$host = "localhost";
 	$user = "postgres";
-	$pswd = "J96914333";
+	$pswd = "J969143";
 	$dbname = "CineSys";
 	$con = null;
 
