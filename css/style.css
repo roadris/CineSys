@@ -100,6 +100,14 @@ p#promocao{
 	width: 600px;
 }
 
+p#cinema{
+	margin: 20px auto 20px auto;
+	font-size: 76px;
+	color: #585858;
+	text-shadow: 5px 5px 20px rgba(255,255,255,1);
+	width: 260px;
+}
+
 
 section img{
 	display: block;
@@ -150,7 +158,3 @@ section#filmes span{
 	font-weight: bold;
 	text-decoration: underline;
 }
-
-
-
-
