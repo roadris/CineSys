@@ -77,13 +77,14 @@ fieldset#usuario, fieldset#salas{
 }
 
 fieldset#funcionario{
-	margin: 10px auto 0px 40%;
-	width: 150px;
+	margin: 10px auto 0px 45%;
+	width: 160px;
 }
 
 fieldset#outros{
+	width: 50px;
 	display: block;
-	margin-left: 40%;
+	margin-left: 47%;
 	text-align: center;
 }
 
@@ -102,7 +103,7 @@ fieldset#usuario button{
 fieldset#funcionario button{
 	padding: 2px;
 	font-size: 15px;
-	margin: 0px  40px;
+	margin: 0px  50px;
 }
 
 fieldset#outros button, fieldset#produtos button, fieldset#salas button{
