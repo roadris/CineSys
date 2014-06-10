@@ -6,6 +6,8 @@
 	<title>CineSys - Cinema</title>
 	<link rel="stylesheet" title="CineSys" href="css/style.css">
 	<link rel="shortcut icon" href="imagens/aba.ico" type="image/x-icon" />
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
 	<a class="botaohome" href="index.html" title="Voltar para home!"><img src="imagens/home.jpg" id="home"></a>
@@ -13,14 +15,18 @@
 	<p id="cinema">CineSys</p>
 	<section id="filmes">
 		<h1>Descrição:</h1>
-		<p>No início do 1º Semestre de 2014 o Prof. Edy Segura propôs um trabalho a ser entregue no final desse mesmo semestre. Esse trabalho deveria atender algumas exigências como: Um CRUD (Cadastrar - Recuperar - Atualizar - Deletar) dos dados, geração de relatórios, em síntese um projeto que ajudasse no gerenciamento. Pensando nisso resolvemos desenvolver um projeto para auxiliar no gerenciamento de cinemas, onde desenvolvemos uma parte para facilitar ao cliente em encontrar qual a programação das sessões e quais serão futuros filmes a serem exibidos e outra parte para o gerenciamento, onde os funcionários podem fazer lançamentos de compras e vendas e verificar alguns relatórios. Como também foi proposto pelo Prof. Márcio Azevedo a apresentação de um trabalho na disciplina de Engenharia de Software III, utilizamos o mesmo projeto do cinema para identificar requisitos, casos de usos, fluxo de eventos, diagramas de comunicação, casos de teste e UCP (Use Case Points). </p>
+		<p>No início do 1º Semestre de 2014 o Prof. Edy Segura propôs um trabalho a ser entregue no final desse mesmo semestre. Esse trabalho deveria atender algumas exigências como: Um CRUD (Cadastrar - Recuperar - Atualizar - Deletar) dos dados, geração de relatórios, em síntese um projeto que ajudasse no gerenciamento. Pensando nisso resolvemos desenvolver um projeto para auxiliar no gerenciamento de cinemas, onde desenvolvemos uma parte para facilitar o acesso do cliente em relação a saber qual a programação das sessões e quais serão futuros filmes a serem exibidos e outra parte para o gerenciamento, onde os funcionários podem fazer lançamentos de compras e vendas e verificar alguns relatórios. Como também foi proposto pelo Prof. Márcio Azevedo a apresentação de um trabalho na disciplina de Engenharia de Software III, utilizamos o mesmo projeto do cinema para identificar requisitos, casos de usos, fluxo de eventos, diagramas de comunicação, casos de teste e UCP (Use Case Points). </p>
 		<h1>Objetivo:</h1>
 		<p>Facilitar o gerenciamento do cinema.</p>
 		<h1>Características</h1>
 		<p>Todo sistema pode ser configurado com cores e logomarca de acordo com a sua vontade.</p>
+		<h1>Onde Estamos</h1>
+		<div id="map">
+      		<input id="address" type="textbox" value="Serras Sul Shopping, Belo Horizonte, Pouso Alegre, Minas Gerais">
+      		<input type="button" value="Geocode" onclick="codeAddress()">
+    	</div>
+    	<div id="map-canvas"></div>
 
 	</section>
-
-	
 </body>
 </html>

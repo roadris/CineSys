@@ -108,6 +108,15 @@ p#cinema{
 	width: 260px;
 }
 
+img#topo{
+	width: 80px;
+	height: 80px;
+}
+
+img#home{
+	width: 100px;
+	height: 100px;
+}
 
 section img{
 	display: block;
@@ -143,6 +152,7 @@ section#filmes h1{
 	margin-top: 10px;
 	text-align: center;
 	text-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+
 }
 
 section#filmes p{
@@ -157,4 +167,20 @@ section#filmes p#obs{
 section#filmes span{
 	font-weight: bold;
 	text-decoration: underline;
+}
+
+div#map-canvas {
+    height: 600px;
+    margin: 0px;
+    padding: 0px
+}
+div#panel {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
 }
