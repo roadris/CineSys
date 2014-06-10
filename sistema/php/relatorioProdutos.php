@@ -10,44 +10,46 @@
 	<header id="cabecalho">
 		<img id="bg_sistema" src="../imagens/bg_logo.jpg"/>
 		<h1>Relatório de Quantidade de Produtos</h1>
-		<table border=1 align="center" id="tabela1">
-			<tr>
-				<th>Produto</th>
-				<th>Quantidade</th>
-			</tr>
-		<?php
-			include'conexao.php';
-			$con = abrirConexao($con, $host, $user, $pswd, $dbname);
+		<div class="tabela">
+			<table>
+				<tr>
+					<td>Produto</td>
+					<td>Quantidade</td>
+				</tr>
+			<?php
+				include'conexao.php';
+				$con = abrirConexao($con, $host, $user, $pswd, $dbname);
 
-			$query = "SELECT nome FROM produtos";
+				$query = "SELECT nome FROM produtos";
 
-			$resultado = pg_query($query);
-			$array = array();
-			while ($lista = pg_fetch_array($resultado)){
-				array_push($array, $lista['nome']);
-			}
+				$resultado = pg_query($query);
+				$array = array();
+				while ($lista = pg_fetch_array($resultado)){
+					array_push($array, $lista['nome']);
+				}
 
-			$query = "SELECT quantidade FROM produtos";
+				$query = "SELECT quantidade FROM produtos";
 
-			$resultado = pg_query($query);
-			$array2 = array();
-			while ($lista = pg_fetch_array($resultado)){
-				array_push($array2, $lista['quantidade']);
-			}
+				$resultado = pg_query($query);
+				$array2 = array();
+				while ($lista = pg_fetch_array($resultado)){
+					array_push($array2, $lista['quantidade']);
+				}
 
-			$c = 0;
-			while($c < count($array)){ ?>
-		<?php
-				?><tr><td> <?php echo $array[$c]; ?> </td>  
-		<?php 
-				?><td> <?php echo $array2[$c]; ?> </tr></td>
-		<?php
-				$c++;
-			}
-			
-		?>
+				$c = 0;
+				while($c < count($array)){ ?>
+			<?php
+					?><tr><td> <?php echo $array[$c]; ?> </td>  
+			<?php 
+					?><td> <?php echo $array2[$c]; ?> </tr></td>
+			<?php
+					$c++;
+				}
+				
+			?>
 
-		</table>
+			</table>
+		</div>
 
 		<button id="botaoRelatorio" onclick="telaRelatorio2()">Voltar</button>
 	</header>

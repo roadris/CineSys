@@ -40,7 +40,7 @@
 				<span id="span_data"></span>
 			</label>
 
-			<input type="submit" id="botao" value="Finalizar" onclick="novaCompra(ajaxRequest)">
+			<input type="submit" id="botao" value="Finalizar" onclick="ajax.novaCompra()">
 			<input type="reset" value="Limpar">
 			<input type="button" onclick="voltaTelaG()" value="Voltar">
 

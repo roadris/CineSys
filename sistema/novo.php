@@ -23,20 +23,22 @@
 				</label>
 
 				<label>
-					Usuario: <input type="text" id="usuario" placeholder="Digite o usuário" required="required" />
+					Usuario: <input type="text" id="usuario" placeholder="Digite o usuário" required="required" onblur="ajax.verificaUsuario()"/>
 					<span id="span_usuario"></span>
 				</label>
 
 				<label>
-					Senha: <input type="password" id="senha" placeholder="Digite a senha" required="required" />
+					Senha: <input type="password" id="senha" placeholder="Digite a senha" required="required" onblur="validacao('senha')"/>
 					<span id="span_senha"></span>
 				</label>
 
-				<input type="submit" value="Salvar" onclick="insereDados(ajaxRequest)">
+				<input type="submit" value="Salvar" onclick="ajax.insereDados()">
 				<input type="reset" value="Limpar">
 				<input type="button" onclick="voltaTelaG()" value="Voltar">
-
+				
+				<div id="respostanome"></div>
 				<div id="resposta"></div>
+				<div id="respostasenha"></div>
 			</form>
 	</header>
 

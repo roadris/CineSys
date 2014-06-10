@@ -18,7 +18,7 @@
 		<img id="bg_sistema" src="imagens/bg_logo.jpg"/>
 			<form id="venda" name="venda" method="POST" onSubmit="return false;">
 				<label>
-					Produto: <select name="prod" id="selectAtualizar" onchange="retornaPreco(ajaxRequest3)">
+					Produto: <select name="prod" id="selectAtualizar" onchange="ajax3.retornaPreco()">
 						<option value="" id ="optionPadrao">--Carregando--</option>
 					</select>
 					<span id="span_produto"></span>
@@ -39,7 +39,7 @@
 					<span id="span_preco"></span>
 				</label>
 
-				<input type="submit" value="Concluir" id="botao" onclick="novaVenda(ajaxRequest)">
+				<input type="submit" value="Concluir" id="botao" onclick="ajax.novaVenda(), limparcampo('selectAtualizar'), limpaAll('input')">
 				<input type="reset" value="Limpar">
 				<input type="button" onclick="voltaTelaF()" value="Voltar">
 

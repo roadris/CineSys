@@ -7,9 +7,9 @@
 
 	$query = "SELECT login FROM funcionarios WHERE login = '$user'";
 	$result = pg_fetch_row(pg_query($query));
-	if($result[0] == $user && $result[0] != " "){
-		echo "Usuário já existente ou indisponivel!";
+	if($result[0] == $user && $result[0] != ""){
+		echo "Usuário já existente ou indisponivel";
 	}else{
-		echo "Disponivel";
+		echo "Usuário disponivel";
 	}
 ?>

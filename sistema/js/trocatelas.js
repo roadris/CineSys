@@ -14,7 +14,6 @@ function telaRelatorio2(){
 	window.location = "../relatorios.php";
 }
 
-
 function telaNovo(){
 	window.location = "novo.php";
 }

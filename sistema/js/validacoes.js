@@ -1,4 +1,5 @@
 function validacao(campo){
+	var nome = campo;
 	var campo = document.getElementById(campo);
 
 	var resposta;
@@ -9,13 +10,13 @@ function validacao(campo){
 		case "usuario":
 			campo.value.length > 1 && campo.value.length <= 12 ? resposta = true : resposta = false;
 			break;
-		default:
+		case "senha":
 			campo.value.length > 5 && campo.value.length <= 12 ? resposta = true : resposta = false;
 			break;
 	}
 
-	campo = document.getElementById('resposta');
-	resposta ? campo.innerHTML = "Nome Valido" : campo.innerHTML = "Nome Invalido";
+	campo = document.getElementById('resposta'+nome);
+	resposta ? campo.innerHTML = "Tamanho do campo " +nome+ " valido": campo.innerHTML = "Tamanho do campo " +nome+ " inválido";
 }
 
 function validar(campo){
@@ -32,4 +33,22 @@ function calculoPreco(){
 	var preco = document.getElementById('preco').value;
 
 	document.getElementById('total').value = quantidade*preco;
+}
+
+function limparcampo(campo){
+	document.getElementById(campo).value = "";
+}
+
+function limparcampo2(campo){
+	document.getElementById(campo).innerHTML = "";
+}
+
+function limpaAll(campo){
+	var campos = document.getElementsByTagName(campo);
+
+	for (var i = campos.length - 1; i >= 0; i--) {
+		if(campos[i].type != "button" && campos[i].type != "submit" && campos[i].type != "reset"){
+			campos[i].value = "";
+		}
+	}
 }

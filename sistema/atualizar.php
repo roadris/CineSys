@@ -19,13 +19,13 @@
 		<img id="bg_sistema" src="imagens/bg_logo.jpg"/>
 			<form id="atualizar" name="atualizar" method="POST" onSubmit="return false;">
 				<label>
-					Selecionar: <select name="att" id="selectAtualizar" onchange="preencheCampos(ajaxRequest2)">
+					Selecionar: <select name="att" id="selectAtualizar" onchange="ajax2.preencheCampos()">
 						<option value="" id="optionPadrao">--Carregando--</option>
 					</select>
 				</label>
 
 				<label>
-					Nome: <input type="text" id="nome" required="required"/>
+					Nome: <input type="text" id="nome" required="required" onblur="validacao('nome')"/>
 					<span id="span_nome"></span>
 				</label>
 
@@ -35,15 +35,18 @@
 				</label>
 
 				<label>
-					Senha: <input type="password" id="senha" required="required"/>
+					Senha: <input type="password" id="senha" required="required" onblur="validacao('senha')"/>
 					<span id="span_senha"></span>
 				</label>
 
 				<input type="reset" value="Limpar">
-				<input type="submit" value="Atualizar" id="botao" onclick="atualizaDados(ajaxRequest)">
-				<input type="submit" value="Deletar" onclick="deletaDados(ajaxRequest)"></br>
+				<input type="submit" value="Atualizar" id="botao" onclick="ajax.atualizaDados()">
+				<input type="submit" value="Deletar" onclick="ajax.deletaDados(), ajax2.init()"></br>
 				<input type="button" onclick="voltaTelaG()" value="Voltar"></br>
-				<span id="resposta"></span>
+				
+				<div id="respostanome"></div>
+				<div id="resposta"></div>
+				<div id="respostasenha"></div>
 			</form>
 	</header>
 
